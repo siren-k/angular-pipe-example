@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pipe-example';
+  data = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('hello');
+    }, 2000);
+  });
 }
